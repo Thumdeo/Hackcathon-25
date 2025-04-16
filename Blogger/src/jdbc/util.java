@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import entity.*;
 public class util {
 	public static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver"; 
-	public static final String DB_URl = "jdbc:mysql://localhost:3306/test"; 
+	public static final String DB_URl = "jdbc:mysql://localhost:3306/Hackathon"; 
 	public static final String DB_USER = "root";
 	public static final String DB_PASSWORD = "manager";
 	static {

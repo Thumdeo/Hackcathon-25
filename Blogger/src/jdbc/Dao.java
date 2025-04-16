@@ -8,7 +8,6 @@ public class Dao extends AutoCloseable {
 	private Connection con;
 	
 	
-	
 	@Override
 	public int save(User s) throws Exception {
 		int count; 

@@ -1,5 +1,5 @@
 package jdbc;
 import entity.*;
-public class DaoImpl {
-
+public class DaoImpl implements AutoCloseable ,Dao{
+  
 }
