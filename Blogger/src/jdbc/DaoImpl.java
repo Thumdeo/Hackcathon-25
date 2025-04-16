@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import entity.*;
 public class DaoImpl implements AutoCloseable ,Dao{
 	private Connection con;
-	public  Dao() throws Exception{
-		con =util.getConnection();
+	public  DaoImpl throws Exception{
+		con = util.getConnection();
 	}
 	@Override
 	public void close() {
