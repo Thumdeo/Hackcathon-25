@@ -5,9 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import entity.*;
+
+
 public class DaoImpl implements AutoCloseable ,Dao{
 	private Connection con;
-	public  DaoImpl throws Exception{
+	public  DaoImpl() throws Exception{
 		con = util.getConnection();
 	}
 	@Override
@@ -20,7 +22,7 @@ public class DaoImpl implements AutoCloseable ,Dao{
 		
 	}
 	@Override
-	public list save(User u) throws Exception {
+	public int save(User u) throws Exception {
 		int count; 
 		String sql = "INSERT INTO User VALUES(?,?,?,?,?,?,?)"; 
 		try(PreparedStatement stmt = con.prepareStatement(sql)){
